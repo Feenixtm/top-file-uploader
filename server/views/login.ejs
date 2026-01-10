@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Login - File Uploader</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    
+    <body>
+        <%- include("partials/header"); %>
+
+        <form action="/login" method="POST" class="login-form">
+            <h1>Log In</h1>
+
+            <p>Don't have an account yet? <a href="/sign-up">Sign Up</a></p>
+
+            <label for="password">Username</label>
+            <input type="text" name="username" id="username">
+
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+
+            <button type="submit">Log In</button>
+
+        </form>
+    </body>
+</html>

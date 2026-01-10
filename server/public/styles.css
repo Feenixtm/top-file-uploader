@@ -1,0 +1,36 @@
+*:not(button) {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button {
+
+}
+
+.login-form {
+
+}
+
+.sign-up-form {
+
+}
+
+/* Sidebar Drop-down */
+
+.sidebar-drop-down {
+
+}
+
+.sidebar-buttons-div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}

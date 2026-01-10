@@ -1,0 +1,41 @@
+const express = require("express");
+const app = express();
+
+require("dotenv").config();
+
+// CSS, EJS, Forms
+const path = require("node:path");
+app.use(express.static("public"));
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+// Sends a forms input values to be sent to req.body
+app.use(express.urlencoded({ extended: false }))
+
+// -------------------------------------------------
+
+app.get("/", (req, res) => {
+    res.render("index");
+})
+
+app.get("/login", (req, res) => {
+    res.render("login");
+})
+
+app.get("/sign-up", (req, res) => {
+    res.render("sign-up");
+})
+
+
+// -------------------------------------------------
+
+const PORT = process.env.PORT || 3001
+app.listen(PORT, error => {
+    if (error) {
+        console.error(error);
+        return error;
+    }
+
+    console.log("Listening to PORT: " + PORT);
+});

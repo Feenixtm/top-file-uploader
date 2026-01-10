@@ -1,0 +1,7 @@
+Server Stuff:
+
+Getting an error when running node script.js in hello-prisma. Probably didn't set up the prisma models correctly or something in the prisma.js file
+
+// ---------
+
+Client Stuff:
