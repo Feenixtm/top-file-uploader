@@ -1,6 +1,10 @@
 Server Stuff:
 
+Prisma:
+[] = 0+
+? = 0 or 1
 
+id String @id @default(uuid()) - Notice that it's a STRING and not INT since it's using a UUID
 
 // ---------
 

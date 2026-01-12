@@ -19,16 +19,20 @@ app.get("/", (req, res) => {
     res.render("test");
 });
 
-// app.get("/", (req, res) => {
-//     res.render("index", { title: "File Explorer" });
-// });
-
 app.get("/login", (req, res) => {
     res.render("login");
 });
 
+app.post("/login", (req, res) => {
+
+});
+
 app.get("/sign-up", (req, res) => {
     res.render("sign-up");
+});
+
+app.post("/sign-up", (req, res) => {
+    
 });
 
 // --------------------------------------------------

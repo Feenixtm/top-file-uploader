@@ -2,6 +2,23 @@ Server Stuff:
 
 Getting an error when running node script.js in hello-prisma. Probably didn't set up the prisma models correctly or something in the prisma.js file
 
+Order:
+    OK public
+    OK prisma.schema
+    views
+    routes (base)
+    controllers(base)
+    routes (full)
+    controllers(full)
+    db
+
+Extra:
+    utils?
+    validators?
+    errors?
+    config?
+
+
 // ---------
 
 Client Stuff:

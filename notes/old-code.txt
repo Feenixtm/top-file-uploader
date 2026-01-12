@@ -39,3 +39,37 @@ app.listen(PORT, error => {
 
     console.log("Listening to PORT: " + PORT);
 });
+
+
+// Prisma ------------------------------------------
+
+// My old code (below)
+
+// model User { 
+//   id        Int       @id @default(autoincrement())
+//   username  String    @unique
+//   email     String    @unique
+//   folders   Folder[]
+//   files     File[]
+// }
+
+// model Folder {
+//   id          Int     @id @default(autoincrement())
+//   folderName  String  
+//   user        User    @relation(fields: [userId], references: [id])
+//   userId      Int
+//   files       File[]
+// }
+
+// model File {
+//   id          Int       @id @default(autoincrement()) 
+//   name        String
+//   path        String
+//   size        Int
+//   mimeType    String
+//   uploadedAt  DateTime  @default(now())
+//   folder      Folder    @relation(fields: [folderId], references: [id])
+//   folderId    Int
+//   user        User      @relation(fields: [userId], references: [id])
+//   userId      Int
+// }
